@@ -94,6 +94,7 @@ footer > p > a {
     font-weight: bolder;
 }
 
+/* About me section */
 #about-me {
     display: flex;
     text-align: center;
@@ -195,23 +196,6 @@ footer > p > a {
     background-color: var(--secondary-color);
 }
 
-#button-scroll-top {
-    background-color: white;
-    border: 1px solid black;
-    margin: 10px;
-    cursor: pointer;
-    float: right;
-    transition: 0.3s;
-}
-
-#button-scroll-top:hover {
-    background-color: var(--secondary-color);
-}
-
-#button-scroll-top img {
-    width: 40px;
-}
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -228,22 +212,14 @@ footer > p > a {
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+/* Projects section */
+#projects {
+    background-color: white;
+    padding: 50px;
+    margin: 20px 0px;
+}
 
+/* Contact section */
 #contact {
     display: flex;
     justify-content: center;
@@ -273,9 +249,9 @@ input:focus {
 }
 
 #form-image {
+    position: relative;
     display: inline-block;
     max-width: 500px;
-    position: relative;
 }
 
 #form-image > #message {
@@ -326,16 +302,47 @@ input:focus {
     cursor: pointer;
 }
 
+/* Scroll top button */
+#button-scroll-top {
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    float: right;
+    transition: 0.3s;
+}
+
+#button-scroll-top:hover {
+    background-color: var(--secondary-color);
+}
+
+#button-scroll-top img {
+    width: 40px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Footer */
 footer {
     background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     padding: 20px;
     font-size: small;
-}
-
-#projects {
-    background-color: white;
-    padding: 50px;
-    margin: 20px 0px;
 }
