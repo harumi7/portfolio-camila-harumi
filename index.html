@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6ebb6fd8a2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Camila Harumi</title>
+</head>
+<body>
+    <header>
+        <span id="welcome">
+            <span class="welcome-message">Welcome! How are you feeling today?</span>
+            <button id="change-color-theme" onclick="changeColorTheme(['#326ec1', '#83af3b', '#eb8000', '#59BDD4', '#8c48d7', '#ddbe00', '#e83e3e', '#cb6491;'])"></button>
+        </span>
+
+        <nav>
+            <ul id="menu-bar">
+                <li><a class="menu-option" href="#about-me">About me</a></li>
+                <li><a class="menu-option" href="#projects">Projects</a></li>
+                <li><a class="menu-option" href="#contact">Contact</a></li>
+            </ul>
+            <ul id="social">
+                <li><a href="https://www.linkedin.com/in/camila-harumi-684733324/" target="_blank"><img class="social-option" src="images/linkedin-icon.png" alt="linkedin logo"></a></li>
+                <li><a href="https://github.com/harumi7" target="_blank"><img class="social-option" src="images/github-icon.png" alt="github logo"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <section id="#about-me">
+            <img id="personal-image" src="images/image-myself.jpg" alt="profile photo">
+
+            <div class="right-side">
+                <h1>It's me, <span style="color: white;">Camila Harumi</span>, hi!</h1>
+                <h2 id="typewriter"><script>typeWriter()</script></h2>
+                <p>My name is Camila Harumi and I am an Information Technology student from Brazil, at Pontifícia Universidade Católica do Paraná.<br>
+                    Mainly programming in Python and currently learning HTML/CSS/JavaScript!</p>
+
+                <h2 id="title-interests">Interests</h2>
+                <div id="interests">
+                    <div class="box-interest">
+                        <h1>Programming</h1>
+                        <i class="fa-solid fa-code fa-2x"></i>
+                        <p>Programming in Python,
+                            <br>
+                            but learning HTML, CSS, JS and Flutter.
+                        </p>
+                    </div>
+                    <div class="box-interest">
+                        <h1>Graphic design</h1>
+                        <i class="fa-solid fa-palette fa-2x"></i>
+                        <p>I am always trying to apply my knowledge on my UI/UX prototypes.</p>
+                    </div>
+                    <div class="box-interest">
+                        <h1>Languages</h1>
+                        <i class="fa-solid fa-comment-dots fa-2x"></i>
+                        <p>I enjoy studying languages by myself: English, Spanish and Japanese.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <p>Sorry, this section is in the process of development. Please, come back later.</p>
+        </section>
+
+        <section id="contact">
+            <div id="form-content">
+                <h1>Contact</h1>
+                <h2>Get in touch. My inbox is always open!</h2>
+                <form action="https://formspree.io/f/mnnqajrk" method="POST" autocomplete="on">
+                    <div class="info">
+                        <label for=""><i class="fa-regular fa-user"></i></label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="info">
+                        <label for=""><i class="fa-regular fa-envelope"></i></label>
+                        <input type="text" name="email" placeholder="Your e-mail" required>
+                    </div>
+                    <div class="info">
+                        <label for=""><i class="fa-regular fa-message"></i></label>
+                        <input type="text" name="message" placeholder="Type your message" required>
+                    </div>
+
+                    <button id="button-submit" type="submit" onclick="">Send message</button>
+                </form>
+            </div>
+
+            <div id="form-information">
+                <img src="images/smartphone.png" alt="black and white smartphone">
+                <i id="message" class="fa-solid fa-message fa-8x"></i>
+                <i id="envelope" class="fa-regular fa-envelope fa-4x"></i>
+            </div>
+        </section>
+
+        <button id="button-scroll-top" onclick="topFunction()"><i class="fa-solid fa-angle-up fa-3x"></i></button>
+    </main>
+
+    <footer>
+        <p>Copyright &copy <span id="year"><script>getYear()</script></span> Camila Harumi's Portfolio
+            <br>
+            Designed and developed by <a href="https://www.linkedin.com/in/camila-harumi-684733324/" target="_blank"><stronger>Camila Harumi</stronger></a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+:root {
+    --primary-color: #cb6491;
+    --secondary-color: #c1c1c1;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    width: 100%;
+    max-width: 1230px;
+}
+
+header {
+    background-color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-message {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul#menu-bar {
+    margin-right: 15px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li .menu-option {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+nav ul li .menu-option:hover {
+    color: var(--primary-color);
+}
+
+#social li a img {
+    width: 20px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 25px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#about-me {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.right-side {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 680px;
+    margin: 20px;
+    flex: 1 1 auto;
+}
+
+#personal-image {
+    max-width: 40%;
+}
+
+#change-color-theme {
+    background-color: var(--primary-color);
+    border-radius: 20%;
+    width: 23px;
+    height: 23px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#change-color-theme:hover {
+    animation: shaking 0.3s linear 2;
+}
+
+.social-option:hover {
+    animation: shaking 0.3s linear 2;
+}
+
+@keyframes shaking {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-7deg);
+    }
+    70% {
+        transform: rotate(7deg);
+    }
+}
+
+#welcome {
+    display: flex;
+}
+
+#interests-top-line, #interests-bottom-line {
+    display: block;
+}
+
+#interests {
+    text-align: center;
+}
+
+.box-interest {
+    width: 200px;
+    height: 280px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.box-interest > h1 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: large;
+}
+
+#title-interests {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#interests > .box-interest > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.box-interest:hover {
+    background-color: var(--secondary-color);
+}
+
+#button-scroll-top {
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    float: right;
+    transition: 0.3s;
+}
+
+#button-scroll-top:hover {
+    background-color: var(--secondary-color);
+}
+
+#button-scroll-top img {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-side {
+        max-width: 100%;
+    }
+    #personal-image {
+        max-width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+#contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-height: 450px;
+    padding-bottom: 50px;
+}
+
+form {
+    margin: auto;
+}
+
+.info {
+    padding: 10px;
+    margin: 20px;
+    border-bottom: 1px solid black;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    width: 93%;
+}
+
+input:focus {
+    outline: none;
+}
+
+#form-information {
+    display: inline-block;
+    max-width: 500px;
+    position: relative;
+}
+
+#form-information > #message {
+    position: absolute;
+    left: 50%;
+    bottom: 38%;
+    color: white;
+}
+
+#form-information > #envelope {
+    position: absolute;
+    left: 57%;
+    bottom: 48%;
+    color: black;
+}
+
+#form-content > h1, #form-content > h2 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#form-content > h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: normal;
+}
+
+#form-content {
+    display: inline-block;
+    background-color: white;
+    min-width: 690px;
+    padding: 20px;
+    text-align: left;
+}
+
+#button-submit {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    transition: 0.3s;
+}
+
+#button-submit:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+footer {
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: small;
+}
+
+#projects {
+    background-color: white;
+    padding: 50px;
+    margin: 20px 0px;
+}
