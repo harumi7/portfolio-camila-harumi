@@ -272,20 +272,20 @@ input:focus {
     outline: none;
 }
 
-#form-information {
+#form-image {
     display: inline-block;
     max-width: 500px;
     position: relative;
 }
 
-#form-information > #message {
+#form-image > #message {
     position: absolute;
     left: 50%;
     bottom: 38%;
     color: white;
 }
 
-#form-information > #envelope {
+#form-image > #envelope {
     position: absolute;
     left: 57%;
     bottom: 48%;
