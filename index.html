@@ -35,14 +35,17 @@
 
     <main id="main">
         <section id="#about-me">
-            <img id="personal-image" src="images/image-myself.jpg" alt="profile photo">
+            <picture>
+                <source media="(max-width: 1200px)" srcset="images/image-myself-small.jpg" type="image/jpg">
+                <img id="personal-image" src="images/image-myself.jpg" alt="profile photo">
+            </picture>
 
-            <div class="right-side">
+            <div id="content">
                 <h1>It's me, <span style="color: white;">Camila Harumi</span>, hi!</h1>
                 <h2 id="typewriter"><script>typeWriter()</script></h2>
                 <p>My name is Camila Harumi and I am an Information Technology student from Brazil, at Pontifícia Universidade Católica do Paraná.<br>
                     Mainly programming in Python and currently learning HTML/CSS/JavaScript!</p>
-
+                
                 <h2 id="title-interests">Interests</h2>
                 <div id="interests">
                     <div class="box-interest">
@@ -95,9 +98,7 @@
             </div>
 
             <div id="form-image">
-                <img src="images/smartphone.png" alt="black and white smartphone">
-                <i id="message" class="fa-solid fa-message fa-8x"></i>
-                <i id="envelope" class="fa-regular fa-envelope fa-4x"></i>
+                <img style="width: 400px;" src="images/reading.svg" alt="a woman reading a message">
             </div>
         </section>
 

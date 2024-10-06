@@ -10,6 +10,7 @@ html {
 
 main {
     background-color: var(--primary-color);
+    padding-bottom: 30px;
 }
 
 body {
@@ -97,21 +98,23 @@ footer > p > a {
 /* About me section */
 #about-me {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.right-side {
+#content {
     display: inline-block;
     vertical-align: top;
     max-width: 680px;
     margin: 20px;
-    flex: 1 1 auto;
+}
+
+#content > h1, h2#typewriter, p {
+    text-align: center;
 }
 
 #personal-image {
-    max-width: 40%;
+    display: inline-block;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 #change-color-theme {
@@ -153,18 +156,22 @@ footer > p > a {
 }
 
 #interests {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .box-interest {
     width: 200px;
-    height: 280px;
+    max-height: 280px;
     background-color: white;
     border: 1px solid black;
     margin: 5px;
-    display: inline-block;
     padding: 5px;
     transition: 0.3s;
+    flex: auto;
 }
 
 .box-interest > h1 {
@@ -200,15 +207,48 @@ footer > p > a {
     header {
         flex-direction: column;
     }
+    #menu-bar {
+        padding: 10px;
+    }
+    nav > #menu-bar > li {
+        padding: 10px;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-    .right-side {
-        max-width: 100%;
+    #about-me {
+        flex-direction: column;
     }
     #personal-image {
-        max-width: 100%;
+        max-width: 50%;
+    }
+    nav {
+        display: block;
+    }
+    #social {
+        flex-direction: row;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding-top: 30px;
+    }
+    #personal-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #content {
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-flow: column nowrap;
     }
 }
 
@@ -224,8 +264,7 @@ footer > p > a {
     display: flex;
     justify-content: center;
     text-align: center;
-    max-height: 450px;
-    padding-bottom: 50px;
+    flex-direction: row;
 }
 
 form {
@@ -241,7 +280,7 @@ form {
 input {
     padding: 10px;
     border: none;
-    width: 93%;
+    width: 90%;
 }
 
 input:focus {
@@ -249,23 +288,11 @@ input:focus {
 }
 
 #form-image {
-    position: relative;
-    display: inline-block;
-    max-width: 500px;
-}
-
-#form-image > #message {
-    position: absolute;
-    left: 50%;
-    bottom: 38%;
-    color: white;
-}
-
-#form-image > #envelope {
-    position: absolute;
-    left: 57%;
-    bottom: 48%;
-    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
 }
 
 #form-content > h1, #form-content > h2 {
@@ -280,11 +307,18 @@ input:focus {
 }
 
 #form-content {
-    display: inline-block;
     background-color: white;
-    min-width: 690px;
+    width: 767px;
+    min-width: 580px;
     padding: 20px;
     text-align: left;
+    margin: auto;
+}
+
+@media (max-width: 940px) {
+    #contact {
+        flex-direction: column;
+    }
 }
 
 #button-submit {
@@ -340,9 +374,10 @@ input:focus {
 
 /* Footer */
 footer {
+    text-align: center;
     background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 30px;
     font-size: small;
 }
