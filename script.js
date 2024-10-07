@@ -5,6 +5,10 @@ function changeColorTheme(colors) {
     // Change background color of the element "main"
     document.getElementById("main").style.backgroundColor = color;
 
+    // Change background color of the element "body"
+    const body = document.getElementById('body');
+    body.style.backgroundColor = color;    
+
     // Change background color of the button that changes the color theme
     const botao = document.getElementById("change-color-theme");
     botao.style.backgroundColor = color;

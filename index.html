@@ -12,11 +12,11 @@
     
     <title>Camila Harumi</title>
 </head>
-<body>
+<body id="body">
     <header>
         <span id="welcome">
             <span class="welcome-message">Welcome! How are you feeling today?</span>
-            <button id="change-color-theme" onclick="changeColorTheme(['#326ec1', '#83af3b', '#eb8000', '#59BDD4', '#8c48d7', '#ddbe00', '#e83e3e', '#cb6491'])"></button>
+            <button id="change-color-theme" onclick="changeColorTheme(['#5d8ed3', '#8ab469', '#e9965e', '#59bdb8', '#a68cd1', '#dbc64b', '#dd695f', '#e5a2b4'])"></button>
         </span>
 
         <nav>
@@ -76,26 +76,28 @@
         </section>
 
         <section id="contact">
-            <div id="form-content">
-                <h1>Contact</h1>
-                <h2>Get in touch. My inbox is always open!</h2>
-                <form action="https://formspree.io/f/mnnqajrk" target="_blank" method="POST" autocomplete="on">
-                    <div class="info">
-                        <label for=""><i class="fa-regular fa-user"></i></label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="info">
-                        <label for=""><i class="fa-regular fa-envelope"></i></label>
-                        <input type="text" name="email" placeholder="Your e-mail" required>
-                    </div>
-                    <div class="info">
-                        <label for=""><i class="fa-regular fa-message"></i></label>
-                        <input type="text" name="message" placeholder="Type your message" required>
-                    </div>
-
-                    <button id="button-submit" type="submit">Send message</button>
-                </form>
-            </div>
+                <div id="form-content">
+                    <h1>Contact</h1>
+                    <h2>Get in touch. My inbox is always open!</h2>
+                    <form action="https://formspree.io/f/mnnqajrk" target="_blank" method="POST" autocomplete="on">
+                        <fieldset>
+                            <div class="information">
+                                <label for=""><i class="fa-regular fa-user"></i></label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="information">
+                                <label for=""><i class="fa-regular fa-envelope"></i></label>
+                                <input type="text" name="email" placeholder="Your e-mail" required>
+                            </div>
+                            <div class="information">
+                                <label for=""><i class="fa-regular fa-message"></i></label>
+                                <input type="text" name="message" placeholder="Type your message" required>
+                            </div>
+                    
+                            <button id="button-submit" type="submit">Send message</button>
+                        </fieldset>
+                    </form>
+                </div>
 
             <div id="form-image">
                 <img style="width: 400px;" src="images/reading.svg" alt="a woman reading a message">
